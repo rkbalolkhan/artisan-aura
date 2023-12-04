@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="Assets/fonts/fontawesome-free-6.5.1-web/css/solid.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <i class="fa-solid fa-bars hidden-icon"></i>
+
+      <img
+        src="https://www.rudhigat.com/pub/media/logo/stores/1/logo_2_.png"
+        alt="logo"
+        class="logo"
+      />
+      <div class="nav">
+        <div class="middle-container">
+          <ul>
+            <li>
+              <a href="index.html" id="nav-1" class="nav-item" >Home</a>
+            </li>
+            <li>
+              <select name="nav-2" id="nav-2" class="nav-item">
+                <option value="">Shop</option>
+              </select>
+            </li>
+            <li>
+              <select name="nav-2" id="nav-3" class="nav-item">
+                <option value="Women-Wear">Women Wear</option>
+              </select>
+            </li>
+            <li>
+              <select name="nav-2" id="nav-4" class="nav-item">
+                <option value="Rudhigat">Rudhigat</option>
+              </select>
+            </li>
+            <li>
+              <a href="contact.html" class="nav-item"> Contact Us </a>
+            </li>
+            <li>
+              <a href="" class="nav-item"> Blog </a>
+            </li>
+          </ul>
+        </div>
+        <div class="right-container">
+          <i class="fa-solid fa-magnifying-glass" ></i>
+          <i class="fa-regular fa-user"></i>
+          <div class="shop-cart">
+            <a href="" class="shop-cart-btn">
+              <span class="cart-price-container">
+                <span class="cart-rupees-sym"> -&nbsp;&nbsp;&#8377; </span>
+                <span class="cart-tot-price"> 0.00 </span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+      <i class="fa-solid fa-cart-shopping hidden-icon"></i>
+    </div>
+    
+    <main class="product-main-container">
+      <section class="product-image-slider">
+        <button class="product-image-slider-btn-container pro-previous" type="button" aria-label="button to previous image on focus section">
+          <img class="product-image-slider-btn pro-previous" src="Assets/icons/icon-previous.svg" alt="">
+        </button>
+  
+        <div class="product-image-slider-image-container">
+          <img class="product-image-slider-image" src="Assets/images/Product-Page/image-product-1.jpg" alt="">
+          <img class="product-image-slider-image product-image-slider-image-2" src="Assets/images/Product-Page/image-product-2.jpg" alt="">
+  
+        </div>
+  
+        <button class="product-image-slider-btn-container pro-next" type="button" aria-label="button to next image on focus section">
+          <img class="product-image-slider-btn pro-next" src="Assets/icons/icon-previous.svg" alt="">
+        </button>
+  
+        <div class="product-image-slider-selector-container slider__selector--container">
+          <button class="product-image-slider-selector-img" type="button" aria-label="button for select product image"><img value="1" src="Assets/images/Product-Page/image-product-1-thumbnail.jpg" alt=""></button>
+          <button class="product-image-slider-selector-img product-image-slider-selector-img-2" type="button" aria-label="button for select product image"><img value="2" src="Assets/images/Product-Page/image-product-2-thumbnail.jpg" alt=""></button>
+          <button class="product-image-slider-selector-img" type="button" aria-label="button for select product image"><img value="3" src="Assets/images/Product-Page/image-product-3-thumbnail.jpg" alt=""></button>
+          <button class="product-image-slider-selector-img" type="button" aria-label="button for select product image"><img value="4" src="Assets/images/Product-Page/image-product-4-thumbnail.jpg" alt=""></button>  
+        </div>
+      </section>
+  
+      <section class="product-image-slider-focus">
+        <button class="close-icon" type="button" aria-label="close focus section">
+          <svg width="14" height="15" xmlns="http://www.w3.org/2000/svg"><path d="m11.596.782 2.122 2.122L9.12 7.499l4.597 4.597-2.122 2.122L7 9.62l-4.595 4.597-2.122-2.122L4.878 7.5.282 2.904 2.404.782l4.595 4.596L11.596.782Z" fill-rule="evenodd"/></svg>
+        </button>
+  
+        <button class="product-image-slider-btn-container pro-previous focus-previous" type="button" aria-label="button to previous image on focus section">
+          <svg class="slider-btn focus-previous--img" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M11 1 3 9l8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        </button>
+  
+        <div class=product-image-slider-image-container slider__focus--img">
+          <img src="Assets/images/Product-Page/image-product-1.jpg" alt="">
+        </div>
+  
+        <button class="product-image-slider-btn-container focus-next" type="button" aria-label="button to next image on focus section">
+          <svg class="slider-btn focus-next--img" width="13" height="18" xmlns="http://www.w3.org/2000/svg"><path d="m2 1 8 8-8 8" stroke-width="3" fill="none" fill-rule="evenodd"/></svg>
+        </button>
+  
+        <div class="product-image-slider-selector-container slider__selector--container">
+          <button class="slider__selector--focus-img" type="button" aria-label="button for select product image on focus section"><img focus-value="1" src="Assets/images/Product-Page/image-product-1-thumbnail.jpg" alt=""></button>
+          <button class="slider__selector--focus-img" type="button" aria-label="button for select product image on focus section"><img focus-value="2" src="Assets/images/Product-Page/image-product-2-thumbnail.jpg" alt=""></button>
+          <button class="slider__selector--focus-img" type="button" aria-label="button for select product image on focus section"><img focus-value="3" src="Assets/images/Product-Page/image-product-3-thumbnail.jpg" alt=""></button>
+          <button class="slider__selector--focus-img" type="button" aria-label="button for select product image on focus section"><img focus-value="4" src="Assets/images/Product-Page/image-product-4-thumbnail.jpg" alt=""></button>  
+        </div>
+      </section>
+  
+      <section class="product-content">
+        <article class="product-content--info">
+          <div class="product__info--text">
+            <p class="product__info--brand">Brass Handcrafted</p>
+            <h2 class="product__info--title"> Bottle Design Pot</h2>
+            <p class="product__info--description">
+              Extremely elegant and delightful set of the antique pot, purely handcrafted and adorned with intricate designs in marori Khulai work. This alluring piece will always remain the center of attraction of the parties and celebrations. This is an excellent present for very special occasions.
+            </p>
+          </div>
+  
+          <div class="info__pricing">
+            <span class="info__pricing--price">	&#8377;2499.50</span>
+            <span class="info__pricing--discount">-50%</span>
+            <span class="info__pricing--before"><strike>	&#8377;4999.00</strike></span>
+          </div>
+        </article>
+  
+        <div class="product-content__order">
+          <div class="order__quantity">
+            <input class="order__quantity--input" type="number" value="0" name="quantity">
+            <button class="order__quantity--btn minus" type="button" aria-label="button for remove quantity product"><img src="Assets/icons/icon-minus.svg" alt=""></button>
+            <button class="order__quantity--btn plus" type="button" aria-label="button for add quantity product"><img src="Assets/icons/icon-plus.svg" alt=""></button>
+          </div>
+  
+          <button class="order__cart" type="button"><img class="order__cart--icon" src="Assets/icons/icon-cart-white.svg" alt=""> Add to cart</button>
+        </div>
+      </section>
+    </main>
+
+    <div class="footer">
+      <img src="https://www.rudhigat.com/pub/media/wysiwyg/VACTER.png" alt="" />
+      <div class="footer-main">
+        <div class="footer-main-top">
+          <div class="footer-newsletter">
+            <p class="footer-part-title">NEWSLETTER</p>
+            <p class="newsletter-parah">
+              Subscribe to our Newsletter and get bonuses for the next purchase
+            </p>
+            <div class="get-email-container">
+              <input
+                type="email"
+                class="get-email"
+                placeholder="Your Email Address"
+              />
+              <button class="footer-subscribe-btn">Subscribe</button>
+            </div>
+          </div>
+
+          <div class="footer-information">
+            <p class="footer-part-title">INFORMATION</p>
+            <ul class="info-links">
+              <li class="info-link"><a href="">About us</a></li>
+              <li class="info-link"><a href="" ">Shipping and Returns</a></li>
+              <li class="info-link"><a href="" >Terms and Conditions</a></li>
+              <li class="info-link"><a href="" >Faq's</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-contact-us">
+            <p class="footer-part-title">CONTACT US</p>
+            <ul class="contact-links">
+              <li class="contact-link">
+                <i class="fa-solid fa-envelope"></i>
+                <a href="" >example@domain.com</a>
+              </li>
+              <li class="contact-link">
+                <i class="fa-solid fa-location-dot"></i>
+                <a href="">My Address, City, Country - PIN 000000</a>
+              </li>
+              <li class="contact-link">
+                <i class="fa-solid fa-phone-volume"></i>
+                <a href="">+91-1234567890</a>
+              </li>
+              <li class="contact-link">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <hr class="footer-divider-line">
+
+        <div class="footer-main-bottom">
+          <div class="footer-main-bottom-left">
+            <p class="copyright-text">
+              &#169; 2023 <a href="">Rudhigat</a>. All Rights Reserved
+            </p>
+          </div>
+          <div class="footer-main-bottom-right">
+            <a href="" class="footer-link-left">About Us</a>
+            <a href="contact.html" class="footer-link-middle">Contact Us</a>
+            <a href="" class="footer-link-rigth">Blog</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
