@@ -297,7 +297,7 @@ li {
   gap: 10px;
 }
 
-.product-container-title {
+.product-container-title,.product-category-container-title {
   position: relative;
   font-size: 2rem;
   margin-top: 10px;
