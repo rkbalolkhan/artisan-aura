@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Artisan Aura | Contact </title>
-    <link rel="icon" href="Assets/images/logo/logo.png" type="image/x-icon">
+    <title>Document</title>
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -60,7 +59,6 @@
               <a href="product-dir.html" id="nav-1" class="nav-item" >Toys</a>
             </li>
 
-            
             <li>
               <a href="contact.html" class="nav-item"> Contact Us </a>
             </li>
@@ -72,7 +70,7 @@
         </div>
         <div class="right-container">
           <i class="fa-solid fa-magnifying-glass" ></i>
-          <a href="/login.html"><i class="fa-regular fa-user"></i></a>  
+          <a href="/login.html" class="nav-active"><i class="fa-regular fa-user"></i></a>  
           <div class="shop-cart">
             <a href="" class="shop-cart-btn">
               <span class="cart-price-container">
@@ -85,47 +83,73 @@
       </div>
       <i class="fa-solid fa-cart-shopping hidden-icon"></i>
     </div>
-    
-    <div class="contact-container">
-      <div class="contact">
-        <div class="contact__content">
-            <div class="contact__img">
-                <img src="assets/images/svg/img-contact.svg" alt="">
+    <div class="login-container">
+      <div class="login">
+        <div class="login__content">
+            <div class="login__img">
+                <img src="assets/images/svg/img-login.svg" alt="">
             </div>
   
-            <div class="contact__forms">
-                <form action="" class="contact__form" id="contact-us">
-                    <h1 class="contact__title">Contact Us</h1>
+            <div class="login__forms">
+                <form action="" class="login__registre" id="login-in">
+                    <h1 class="login__title">Sign In</h1>
   
-                    <div class="contact__box">
-                        <i class='fa-solid fa-user contact__icon'></i>
-                        <input type="text" placeholder="Name" class="contact__input">
+                    <div class="login__box">
+                        <i class='fa-solid fa-user login__icon'></i>
+                        <input type="text" placeholder="Name" class="login__input">
                     </div>
   
-                    <div class="contact__box">
-                        <i class='fa-solid fa-at contact__icon'></i>
-                        <input type="email" placeholder="Email" class="contact__input">
-                    </div>
-
-                    <div class="contact__box">
-                      <i class='fa-solid fa-phone contact__icon'></i>
-                      <input type="number" placeholder="Contact Number" class="contact__input">
-                    </div>
-
-                    <div class="contact__box">
-                      <i class='fa-solid fa-envelope contact__icon'></i>
-                      <textarea type="text" placeholder="Message" class="contact__input contact__msg__input"></textarea>
+                    <div class="login__box">
+                        <i class='fa-solid fa-lock login__icon'></i>
+                        <input type="password" placeholder="Password" class="login__input">
                     </div>
   
+                    <a href="#" class="login__forgot">Forgot password?</a>
   
-                    <a href="#" class="main-btn">Send</a>
+                    <a href="#" class="login__button main-btn">Sign In</a>
   
-                    
-                 </form>
+                    <div>
+                        <span class="login__account">Don't have an Account ?</span>
+                        <span class="login__signin" id="sign-up">Sign Up</span>
+                    </div>
+                </form>
+  
+                <form action="" class="login__create none" id="login-up">
+                    <h1 class="login__title">Create Account</h1>
+  
+                    <div class="login__box">
+                        <i class='fa-solid fa-user login__icon'></i>
+                        <input type="text" placeholder="Name" class="login__input">
+                    </div>
+  
+                    <div class="login__box">
+                        <i class='fa-solid fa-at login__icon'></i>
+                        <input type="text" placeholder="Email" class="login__input">
+                    </div>
+  
+                    <div class="login__box">
+                      <i class="fa-solid fa-lock login__icon"></i>
+                        <input type="password" placeholder="Password" class="login__input">
+                    </div>
+  
+                    <a href="#" class="login__button main-btn">Sign Up</a>
+  
+                    <div>
+                        <span class="login__account">Already have an Account ?</span>
+                        <span class="login__signup" id="sign-in">Sign In</span>
+                    </div>
+  
+                    <div class="login__social">
+                        <a href="#" class="login__social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="login__social-icon"><i class='fa-brands fa-twitter' ></i></a>
+                        <a href="#" class="login__social-icon"><i class='fa-brands fa-google' ></i></a>
+                    </div>
+                </form>
             </div>
-          </div>
         </div>
       </div>
+    </div>
+    
 
     <div class="footer">
       <img src="https://www.rudhigat.com/pub/media/wysiwyg/VACTER.png" alt="" />
@@ -196,5 +220,6 @@
       </div>
     </div>
 
+    <script src="login.js"></script>
   </body>
 </html>

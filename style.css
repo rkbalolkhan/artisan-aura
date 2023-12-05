@@ -360,7 +360,7 @@ li {
 }
 
 .grid-product-btn {
-  background-color: red;
+  background-color: #8C3C3D;
   padding: 5px 20px;
   border-radius: 40px;
   font-size: 0.9rem;
@@ -653,6 +653,15 @@ li {
 .footer-link-middle {
   border-left: 1px solid rgba(255, 255, 255, 0.5);
   border-right: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.nav-active i{
+  border-radius: 50%;
+  font-size: 1.2rem;
+  color: white;
+  background-color: rgb(71, 8, 65);
+  font-weight: 600;
+  padding:10px;
 }
 
 .nav .middle-container .nav-active{
@@ -1212,11 +1221,11 @@ textarea.contact-input {
   margin: 5px;
 }
 
-.product-main-container p {
+.product-main-container * p {
   color: black;
 }
 
-.product-main-container img {
+.product-main-container * img {
   max-width: 100%;
 }
 
@@ -1244,7 +1253,7 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-a {
+a:not(.login__social-icon) {
   display: block;
   text-decoration: none;
   cursor: pointer;
@@ -1359,137 +1368,12 @@ ul {
   color: #000;
 }
 
-
-/* Main */
 .product-main-container {
   position: relative;
 }
 
 
-/* Cart */
-.cart {
-  display: none;
-}
 
-.cart.active {
-  display: block;
-  max-width: 475px;
-  margin-inline: auto;
-  min-height: 31%;
-  position: absolute;
-  top: 8px;
-  left: 8px;
-  right: 8px;
-  background-color: #fff;
-  border-radius: 6px;
-  box-shadow: 0 5px 20px -6px rgba(0,0,0,0.75);
-  z-index: 400;
-}
-
-.cart-header {
-  padding: 1.25rem;
-  border-bottom: 1px solid hsl(220, 14%, 75%);
-}
-
-.cart-header--title {
-  font-weight: 700;
-  color: #000;
-}
-
-.cart-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  overflow-y: scroll;
-  max-height: 400px;
-  padding-bottom: 100px;
-  gap: 0;
-}
-
-.cart-content.empty {
-  height: 200px;
-  padding: 0;
-  overflow-y: hidden;
-  justify-content: center;
-  font-weight: 700;
-}
-
-.cart__empty--text {
-  display: none;
-}
-
-.cart-content.empty .cart__empty--text {
-  display: block;
-  margin-block: auto;
-}
-
-.cart__btn--container {
-  width: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #fff;
-}
-
-.cart-content.empty .cart__btn--container {
-  display: none;
-}
-
-.cart__btn {
-  display: block;
-  width: 87%;
-  margin: 1.75rem auto;
-  padding: 1.125rem 2rem;
-  background-color: rgb(140, 60, 61);
-  font-size: .9rem;
-  text-align: center;
-  font-weight: 700;
-  color: #fff;
-  border-radius: 8px;
-}
-
-
-/* cart product */
-.cart__product {
-  width: 87.5%;
-  margin: 1.5rem auto 1rem auto;
-  display: flex;
-  align-items: center;
-}
-
-.cart__product--img {
-  width: 50px;
-  border-radius: 4px;
-}
-
-.cart__product--info {
-  margin-inline: 1rem auto;
-  max-width: 65%;
-}
-
-.cart__info--title {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.cart__info--quantity {
-  display: inline-block;
-  width: fit-content;
-  color: hsl(223, 64%, 98%);
-  margin-top: .4rem;
-  margin-right: .2rem;
-}
-
-.cart__product--delete img {
-  min-width: 15px;
-  height: 20px;
-}
-
-
-/* Slider */
 .product-image-slider {
   position: relative;
   height: 38vh;
@@ -1811,19 +1695,10 @@ ul {
 
   .order__quantity {
       height: fit-content;
+      display: flex;
+      justify-content: space-between;
   }
 
-  .order__quantity--btn.minus {
-      left: 0;
-  }
-
-  .order__quantity--btn.plus {
-      right: 0;
-  }
-
-  .order__quantity--btn {
-      width: 40px;
-  }
 
   .order__quantity--btn:hover,
   .order__cart:hover {
@@ -1835,5 +1710,248 @@ ul {
   .order__cart:active {
       transform: scale(90%);
       opacity: 1;
+  }
+}
+
+
+
+
+
+.login-container,.contact-container{
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: .938rem;
+  color: #23004D;
+}
+
+
+h1{
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.login,.contact{
+  display: grid;
+  grid-template-columns: 100%;
+  height: 100vh;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+.login__content,.contact__content{
+  display: grid;
+}
+
+.login__img, .contact__img{
+  justify-self: center;
+}
+
+.login__img img, .contact__img img{
+  width: 310px;
+  margin-top: 1.5rem;
+}
+
+.login__forms{
+  position: relative;
+  height: 368px;
+}
+
+.contact__forms{
+  position: relative;
+  height: 505px;
+}
+
+
+.login__registre,.contact__form, .login__create{
+  position: absolute;
+  bottom: 1rem;
+  width: 100%;
+  background-color: #F2F2F2;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(35,0,77,.2);
+  animation-duration: .4s;
+  animation-name: animate-login;
+}
+
+@keyframes animate-login{
+  0%{
+    transform: scale(1,1);
+  }
+  50%{
+    transform: scale(1.1,1.1);
+  }
+  100%{
+    transform: scale(1,1);
+  }
+}
+
+.login__title, .contact__title{
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.contact__box ,.login__box{
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  column-gap: .5rem;
+  padding: 1.125rem 1rem;
+  background-color: #FFF;
+  margin-top: 1rem;
+  border-radius: .5rem;
+}
+
+.login__icon, .contact__icon{
+  font-size: 1.5rem;
+  color: rgb(140, 60, 61);
+}
+
+.contact__input ,.login__input{
+  border: none;
+  outline: none;
+  font-size: .938rem;
+  font-weight: 700;
+  color: #23004D;
+}
+
+.contact__input.contact__msg__input{
+  resize: vertical; 
+  max-height: 75px;
+  min-height: 20px;
+  overflow:hidden;
+}
+
+.login__input::placeholder{
+  font-size:.938rem;
+  color: #A49EAC;
+}
+
+.login__forgot{
+  display: block;
+  width: max-content;
+  margin-left: auto;
+  margin-top: .5rem;
+  font-size: .813rem;
+  font-weight: 600;
+  color: #A49EAC;
+}
+
+.main-btn{
+  display: block;
+  padding: 1rem;
+  margin: 2rem 0;
+  background-color: #8c3c3d;
+  color: #FFF;
+  font-weight: 600;
+  text-align: center;
+  border-radius: .5rem;
+  transition: .3s;
+}
+
+.main-btn:hover{
+  background-color: #23004D;
+}
+
+.login__account, .login__signin, .login__signup{
+  font-weight: 600;
+  font-size: .813rem;
+}
+
+.login__account{
+  color: #23004D;
+}
+
+.login__signin, .login__signup{
+  color: rgb(140, 60, 61);
+  cursor: pointer;
+}
+
+.login__social{
+  margin-top: 2rem;
+}
+
+.login__social-icon{
+  font-size: 1.5rem;
+  color: #23004D;
+  margin: 0 1.5rem;
+}
+
+.block{
+  display: block;
+}
+
+
+.none{
+  display: none;
+}
+
+
+@media screen and (min-width: 768px){
+  .login-container,.contact-container,.login__input,.login__input::placeholder{
+    font-size: 1rem;
+  }
+
+  .login__forgot,.login__account, .login__signin, .login__signup{
+    font-size: .875rem;
+
+  }
+}
+
+@media screen and (min-width: 576px){
+  .login__forms,.contact__forms{
+    width: 348px;
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .login,.contact{
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .login__content,.contact__content{
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+  }
+
+  .login__img, .contact__img{
+    display: flex;
+    width: 600px;
+    height: 588px;
+    background-color: #F2F2F2;
+    border-radius: 1rem;
+    padding-left: 1rem;
+  }
+
+  .login__img img, .contact__img img{
+    width: 390px;
+    margin-top: 0;
+  }
+
+  .login__registre,.contact__form, .login__create{
+    left: -11rem;
+  }
+
+  .login__registre,.contact__form{
+    bottom: -2rem;
+  }
+
+  .login__create{
+    bottom: -6rem;
   }
 }
