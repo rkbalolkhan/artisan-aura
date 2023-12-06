@@ -15,7 +15,7 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  background-image: url("https://www.rudhigat.com/pub/media/pattern/default/website_rudigat_1.png");
+  background-image: url("Assets/images/background/background.png");
   background-repeat: repeat-y;
   background-size: cover;
   align-items: center;
@@ -1771,8 +1771,13 @@ img{
   height: 505px;
 }
 
+.about__container{
+  position: relative;
+  height: 505px;
+}
 
-.login__registre,.contact__form, .login__create{
+
+.login__registre,.contact__form, .login__create, .about__details{
   position: absolute;
   bottom: 1rem;
   width: 100%;
@@ -1784,6 +1789,8 @@ img{
   animation-duration: .4s;
   animation-name: animate-login;
 }
+
+
 
 @keyframes animate-login{
   0%{
@@ -1797,7 +1804,7 @@ img{
   }
 }
 
-.login__title, .contact__title{
+.login__title, .contact__title,.about__title{
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
@@ -1909,7 +1916,7 @@ img{
 }
 
 @media screen and (min-width: 576px){
-  .login__forms,.contact__forms{
+  .login__forms,.contact__forms,.about__container{
     width: 348px;
     justify-self: center;
   }
@@ -1928,7 +1935,7 @@ img{
     margin-left: 10rem;
   }
 
-  .login__img, .contact__img{
+  .login__img, .contact__img,.about__img{
     display: flex;
     width: 600px;
     height: 588px;
@@ -1937,13 +1944,17 @@ img{
     padding-left: 1rem;
   }
 
-  .login__img img, .contact__img img{
+  .login__img img, .contact__img img, .about__img img{
     width: 390px;
     margin-top: 0;
   }
 
-  .login__registre,.contact__form, .login__create{
+  .login__registre,.contact__form, .login__create .about__details{
     left: -11rem;
+  }
+
+  .login__registre,.contact__form{
+    bottom: -2rem;
   }
 
   .login__registre,.contact__form{
@@ -1965,4 +1976,38 @@ img{
 .product-directory-container .product-container-grid{
   height: 100vh;
   overflow-y: scroll;
+}
+
+.about__box{
+  display: grid;
+  grid-template-rows: max-content 1fr;
+  row-gap: .2rem;
+  padding: 1rem 1rem;
+  background-color: #FFF;
+  margin-top: 0.2rem;
+  border-radius: .5rem;
+  overflow-y: scroll;
+  max-height: 400px;
+}
+
+.about__box::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.about__box::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #526BA5;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #73620d;
+}
+
+.about__box p{
+  margin:2px 0;
+  text-wrap: wrap;
+  font-size: 0.9rem;
 }
