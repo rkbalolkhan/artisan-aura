@@ -2011,3 +2011,29 @@ img{
   text-wrap: wrap;
   font-size: 0.9rem;
 }
+
+.shop-nav{
+  display: flex;
+  width: 70%;
+  margin-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+}
+
+.shop-nav-btn{
+  height: 20px;
+  width: 25px;
+  background-color: #1E3B6E;
+  padding: 5px 10px;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+}
+
+.shop-nav-btn i{
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+}
